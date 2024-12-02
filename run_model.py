@@ -2,7 +2,7 @@
 
 import sys
 # from transformers import pipeline
-from transformers import AutoTokenizer, AutoModelForSeq2SeqLM, GenerationConfig
+from transformers import AutoTokenizer, AutoModelForSeq2SeqLM, GenerationConfig, AutoConfig
 # from flask import Flask, request, jsonify
 
 # app = Flask(__name__)
@@ -10,7 +10,7 @@ from transformers import AutoTokenizer, AutoModelForSeq2SeqLM, GenerationConfig
 # Load a pre-trained model
 model_name = 'google/flan-t5-xl'
 model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
-tokenizer = AutoTokenizer.from_pretrained(model_name)
+tokenizer = AutoT*okenizer.from_pretrained(model_name)
 config = GenerationConfig(max_new_tokens=200)
 
 # TODO: pipeline vs above model def?
